@@ -10,6 +10,9 @@ export class OutdoorCenterAssembler implements BaseAssembler<
 > {
   toEntitiesFromResponse = (response: OutdoorCenterResponse): OutdoorCenter[] =>
     response.OutdoorCenterResponse.map((resource) => this.toEntityFromResource(resource));
+
+
+
   toEntityFromResource = (resource: OutdoorCenterResource): OutdoorCenter =>
     new OutdoorCenter({
       id: resource.id,
