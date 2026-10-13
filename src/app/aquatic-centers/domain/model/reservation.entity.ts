@@ -1,13 +1,14 @@
 import { BaseEntity } from '../../../shared/domain/model/base-entity';
+import { DateTime } from '../../../shared/domain/model/date-time';
 
 export class Reservation implements BaseEntity {
   #id: number;
   #aquaticCenterId: number;
-  #activityType:string;
+  #activityType: string;
   #activityName: string;
   #participants: string;
   #weatherTemperature: string;
-  #reservedAt: string;
+  #reservedAt: DateTime;
 
   constructor(props: {
     id: number;
@@ -16,7 +17,7 @@ export class Reservation implements BaseEntity {
     activityName: string;
     participants: string;
     weatherTemperature: string;
-    reservedAt: string;
+    reservedAt: DateTime;
   }) {
     this.#id = props.id;
     this.#aquaticCenterId = props.aquaticCenterId;
@@ -24,9 +25,8 @@ export class Reservation implements BaseEntity {
     this.#activityName = props.activityName;
     this.#participants = props.participants;
     this.#weatherTemperature = props.weatherTemperature;
-    this.#reservedAt = props.reservedAt;
+    this.#reservedAt = new DateTime();
   }
-
 
   get id(): number {
     return this.#id;
@@ -74,14 +74,6 @@ export class Reservation implements BaseEntity {
 
   set weatherTemperature(value: string) {
     this.#weatherTemperature = value;
-  }
-
-  get reservedAt(): string {
-    return this.#reservedAt;
-  }
-
-  set reservedAt(value: string) {
-    this.#reservedAt = value;
   }
 }
 

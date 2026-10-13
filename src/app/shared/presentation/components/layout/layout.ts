@@ -30,7 +30,7 @@ export class Layout {
   private readonly logoApi = inject(LogoApi);
 
   /** Red Cross logo URL obtained from the Logo API. */
-  protected readonly logoUrl = this.logoApi.getUrlToLogo('redcross.org');
+  protected readonly logoUrl = this.logoApi.getUrlToLogo('');
 
   /** Navigation options shown at the center of the toolbar. */
   protected readonly options = signal([{ link: '/home', label: 'option.home' }]);
