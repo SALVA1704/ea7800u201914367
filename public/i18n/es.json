@@ -1,0 +1,22 @@
+{
+  "option": {
+    "home": "Casa"
+  },
+  "home": {
+    "title": "Bienvenido",
+    "content": "Bienvenido"
+  },
+  "page-not-found": {
+    "title": "Pagina no encontrada",
+    "content": "The path <strong>{{ invalid_path }}</strong> is not valid.",
+    "go-home": "Ir a casa"
+  },
+  "toolbar": {
+    "title": "AquaLife Aquatic Centers"
+  },
+  "footer": {
+    "rights": "All rights reserved.",
+    "powered-by": "Powered by",
+    "and": "and"
+  }
+}

@@ -4,7 +4,6 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
 import { TranslatePipe } from '@ngx-translate/core';
 import { LanguageSwitcher } from '../language-switcher/language-switcher';
-import { FooterContent } from '../footer-content/footer-content';
 import { LogoApi } from '../../../infrastructure/logo-api';
 
 /**
@@ -23,7 +22,6 @@ import { LogoApi } from '../../../infrastructure/logo-api';
     MatButtonModule,
     TranslatePipe,
     LanguageSwitcher,
-    FooterContent,
   ],
   templateUrl: './layout.html',
   styleUrl: './layout.css',
